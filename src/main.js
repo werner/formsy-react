@@ -8,6 +8,7 @@ var HOC = require('./HOC.js');
 var Decorator = require('./Decorator.js');
 var options = {};
 var emptyArray = [];
+var createReactClass = require('create-react-class');
 
 Formsy.Mixin = Mixin;
 Formsy.HOC = HOC;
@@ -21,7 +22,7 @@ Formsy.addValidationRule = function (name, func) {
   validationRules[name] = func;
 };
 
-Formsy.Form = React.createClass({
+Formsy.Form = createReactClass({
   displayName: 'Formsy',
   getInitialState: function () {
     return {
