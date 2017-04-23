@@ -8,6 +8,7 @@ var HOC = require('./HOC.js');
 var Decorator = require('./Decorator.js');
 var options = {};
 var emptyArray = [];
+var PropTypes = require('prop-types'); 
 var createReactClass = require('create-react-class');
 
 Formsy.Mixin = Mixin;
