@@ -1,8 +1,9 @@
 var React = global.React || require('react');
 var Mixin = require('./Mixin.js');
+var createReactClass = require('create-react-class');
 module.exports = function () {
   return function (Component) {
-    return React.createClass({
+    return createReactClass({
       mixins: [Mixin],
       render: function () {
         return React.createElement(Component, {

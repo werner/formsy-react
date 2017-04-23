@@ -47,7 +47,7 @@ Formsy.Form = createReactClass({
   },
 
   childContextTypes: {
-    formsy: React.PropTypes.object
+    formsy: PropTypes.object
   },
   getChildContext: function () {
     return {
